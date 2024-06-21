@@ -7,16 +7,17 @@
 
 body {
     display: grid;
-    grid-template-columns: minmax(1fr, 1fr) minmax(1fr, 1fr);
+    grid-template-columns: minmax(18vw, 1fr) minmax(1fr, 1fr);
     padding-top: 30px;
 }
 
 main {
+    width: 72%;
     background-color: rgba(0, 0, 0, 0.795);
     border: 2px solid black;
     border-radius: 20px;
     margin-left: 27vw;
-    height: 850px;
+    height: 91vh;
     padding: 30px;
     box-sizing: border-box;
     overflow-y: scroll;
@@ -42,10 +43,11 @@ main::-webkit-scrollbar-thumb {
 main::-webkit-scrollbar-thumb:hover {
     background-color: rgba(6, 170, 199, 1);
 }
+
 header {
     margin-left: 20px;
     background-color: rgba(0, 0, 0, 0.856);
-    height: 79.5vh;
+    height: 84vh;
     width: 22vw;
     padding: 30px;
     position: fixed;
