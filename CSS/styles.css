@@ -20,8 +20,28 @@ main {
     padding: 30px;
     box-sizing: border-box;
     overflow-y: scroll;
+ }
+
+/* Estilos específicos para WebKit (Chrome, Safari, Edge) */
+main::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
 }
 
+main::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+main::-webkit-scrollbar-thumb {
+    background-color: rgba(6, 170, 199, 0.8);
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0);
+}
+
+main::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(6, 170, 199, 1);
+}
 header {
     margin-left: 20px;
     background-color: rgba(0, 0, 0, 0.856);
@@ -59,17 +79,18 @@ nav {
     height: 50px;
     border-top: 2px solid;
     border-left: 3px solid black;
-    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
     background-color: rgba(0, 0, 0, 0.404);
-    color: white;
+    border-left-color: black;
     border-right-color: rgb(6, 170, 199);
     border-bottom-color: rgb(6, 170, 199);
     border-top-color: rgb(6, 170, 199);
-    border-left-color: black;
+    transition-property: width;
+    transition-duration: 2s;
 }
 
 .todos-productos:hover {
-    background-color: rgba(6, 170, 199, 0.822);
+    width: 110%;
 }
 
 
@@ -79,18 +100,19 @@ nav {
     height: 50px;
     border-top: 2px solid;
     border-left: 3px solid black;
-    border-bottom-right-radius: 20px;
     background-color: rgba(0, 0, 0, 0.404);
-    color: white;
+    border-left-color: black;
     border-right-color: rgb(6, 170, 199);
     border-bottom-color: rgb(6, 170, 199);
     border-top-color: rgb(6, 170, 199);
-    border-left-color: black;
+    transition-property: width;
+    transition-duration: 2s;
 }
 
 .abrigos:hover {
-    background-color: rgba(6, 170, 199, 0.822);
+    width: 110%;
 }
+
 
 .camisetas {
     width: 100%;
@@ -98,18 +120,19 @@ nav {
     height: 50px;
     border-top: 2px solid;
     border-left: 3px solid black;
-    border-bottom-right-radius: 20px;
     background-color: rgba(0, 0, 0, 0.404);
-    color: white;
+    border-left-color: black;
     border-right-color: rgb(6, 170, 199);
     border-bottom-color: rgb(6, 170, 199);
     border-top-color: rgb(6, 170, 199);
-    border-left-color: black;
+    transition-property: width;
+    transition-duration: 2s;
 }
 
 .camisetas:hover {
-    background-color: rgba(6, 170, 199, 0.822);
+    width: 110%;
 }
+
 
 .pantalones {
     width: 100%;
@@ -119,16 +142,18 @@ nav {
     border-left: 3px solid black;
     border-bottom-right-radius: 20px;
     background-color: rgba(0, 0, 0, 0.404);
-    color: white;
+    border-left-color: black;
     border-right-color: rgb(6, 170, 199);
     border-bottom-color: rgb(6, 170, 199);
     border-top-color: rgb(6, 170, 199);
-    border-left-color: black;
+    transition-property: width;
+    transition-duration: 2s;
 }
 
 .pantalones:hover {
-    background-color: rgba(6, 170, 199, 0.822);
+    width: 110%;
 }
+
 
 .contenedor-carrito {
     width: 10%;
@@ -143,10 +168,12 @@ nav {
     border-bottom-color: rgb(6, 170, 199);
     border-top-color: rgb(6, 170, 199);
     border-left-color: black;
+    transition-property: width;
+    transition-duration: 2s;
 }
 
 .contenedor-carrito:hover {
-    background-color: rgba(6, 170, 199, 0.822);
+    width: 13%;
 }
 
 .contenedor-carrito {
@@ -205,7 +232,7 @@ nav {
 .abrigo3-info,
 .abrigo4-info,
 .abrigo5-info {
-    height: 120px;
+    height: 140px;
     padding: 20px;
     box-sizing: border-box;
     border-radius: 10px;
@@ -247,6 +274,7 @@ nav {
 .abrigo3 img,
 .abrigo4 img,
 .abrigo5 img{
+    height: 160px;
     border: 2px solid black;
     border-radius: 20px;
 }
@@ -276,7 +304,7 @@ nav {
 .camiseta3-info,
 .camiseta4-info,
 .camiseta5-info {
-    height: 120px;
+    height: 140px;
     padding: 20px;
     box-sizing: border-box;
     border-radius: 10px;
@@ -318,6 +346,7 @@ nav {
 .camiseta3 img,
 .camiseta4 img,
 .camiseta5 img{
+    height: 160px;
     border: 2px solid black;
     border-radius: 20px;
 }
@@ -347,7 +376,7 @@ nav {
 .pantalon3-info,
 .pantalon4-info,
 .pantalon5-info {
-    height: 120px;
+    height: 140px;
     padding: 20px;
     box-sizing: border-box;
     border-radius: 10px;
@@ -389,6 +418,57 @@ nav {
 .pantalon3 img,
 .pantalon4 img,
 .pantalon5 img{
+    height: 160px;
     border: 2px solid black;
     border-radius: 20px;
+}
+
+.button-agregar-carrito {
+    width: 12vh;
+    height: 6vh;
+    background-color: #2525258c; 
+    border: 2px solid #000; 
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-left: 30px;
+    cursor: pointer;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+@keyframes button-move {
+    0% {
+        background-color: #2525258c;
+        margin-top: 0px;
+        border-left-color: rgba(6, 170, 199, 0.178);
+        
+    }
+
+    20% {
+        border-left-color: rgba(6, 170, 199, 0.781);
+    }
+
+    50% {
+        margin-top: 10px;
+        border-top-color: rgb(6, 170, 199);
+    }
+
+    70% {
+        border-right-color: rgba(6, 170, 199, 0.781);
+    }
+
+    100% {
+        border-bottom-color: rgba(6, 170, 199, 0.575);
+    }
+}
+
+.button-agregar-carrito:hover {
+    animation: button-move 2s linear 0s normal forwards running;
+    background-color: #000;
+}
+
+.button-agregar-carrito a{
+    color: rgb(6, 170, 199);
 }
