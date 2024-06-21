@@ -198,276 +198,68 @@ nav {
     margin-right: 630px;
 }
 
-/* Prodcuctos del main */
-
-#productos{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
+#productos {
+    background-color: red;
+    display: flex;
+    flex-direction: column;
 }
 
-/* ABRIGOS */
-
-.abrigo1,
-.abrigo2,
-.abrigo3,
-.abrigo4,
-.abrigo5 {
-    box-shadow: 10px 15px 8px;
-    padding-top: 30px;
-    box-sizing: border-box;
-    background-color: rgba(26, 24, 24, 0.644);
-    width: 15vw;
-    height: 44vh;
+.producto-container {
     border: 2px solid rgb(6, 170, 199);
     border-radius: 20px;
+    background-color: rgb(49, 48, 48);
+    padding: 10px;
+    box-sizing: border-box;
+    width: 65vw;
+    height: 18vh;
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.producto-container img{
+    border: 2px solid black;
+    border-radius: 50%;
+    width: 8vw;
+}
+
+.info-container {
+    width: 15vw;
+    padding: 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    row-gap: 30px;
+    box-sizing: border-box;
 }
 
-.abrigo1-info,
-.abrigo2-info,
-.abrigo3-info,
-.abrigo4-info,
-.abrigo5-info {
-    height: 140px;
-    padding: 20px;
-    box-sizing: border-box;
-    border-radius: 10px;
+.info-container h1{
     color: whitesmoke;
-    margin-bottom: 80px;
-    width: 90%;
-    display: grid;
-    grid-template-areas: 
-    "Titulo Titulo"
-    "Precio Carrito"
-    ;
-    gap: 20px;
-    background-color: rgba(163, 163, 163, 0.13);
-    border: 1px solid rgb(6, 170, 199);
-}
-
-.abrigo1-info h1,
-.abrigo2-info h1,
-.abrigo3-info h1,
-.abrigo4-info h1,
-.abrigo5-info  h1{
-    font-size: 0.7vw;
     font-family: "Lato", sans-serif;
-    
-}
-
-.abrigo1-info p,
-.abrigo2-info p,
-.abrigo3-info p,
-.abrigo4-info p,
-.abrigo5-info  p{
-    font-size: 0.7vw;
-    font-family: "Lato", sans-serif;
-    
-}
-
-.abrigo1 img,
-.abrigo2 img,
-.abrigo3 img,
-.abrigo4 img,
-.abrigo5 img{
-    height: 160px;
-    border: 2px solid black;
-    border-radius: 20px;
-}
-
-/* CAMISETAS */
-.camiseta1,
-.camiseta2,
-.camiseta3,
-.camiseta4,
-.camiseta5 {
-    box-shadow: 10px 15px 8px;
-    padding-top: 30px;
+    margin-right: 20vw;
     box-sizing: border-box;
-    background-color: rgba(26, 24, 24, 0.644);
+}
+
+.info-container p{
+    color: rgba(245, 245, 245, 0.733);
+}
+
+.cantidad-container {
     width: 15vw;
-    height: 44vh;
-    border: 2px solid rgb(6, 170, 199);
-    border-radius: 20px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    row-gap: 30px;
+    box-sizing: border-box;
 }
 
-.camiseta1-info,
-.camiseta2-info,
-.camiseta3-info,
-.camiseta4-info,
-.camiseta5-info {
-    height: 140px;
-    padding: 20px;
-    box-sizing: border-box;
-    border-radius: 10px;
+.cantidad-container label{
     color: whitesmoke;
-    margin-bottom: 80px;
-    width: 90%;
-    display: grid;
-    grid-template-areas: 
-    "Titulo Titulo"
-    "Precio Carrito"
-    ;
-    gap: 20px;
-    background-color: rgba(163, 163, 163, 0.13);
-    border: 1px solid rgb(6, 170, 199);
-}
-
-.camiseta1-info h1,
-.camiseta2-info h1,
-.camiseta3-info h1,
-.camiseta4-info h1,
-.camiseta5-info  h1{
-    font-size: 0.7vw;
     font-family: "Lato", sans-serif;
-    
-}
-
-.camiseta1-info p,
-.camiseta2-info p,
-.camiseta3-info p,
-.camiseta4-info p,
-.camiseta5-info  p{
-    font-size: 0.7vw;
-    font-family: "Lato", sans-serif;
-    
-}
-
-.camiseta1 img,
-.camiseta2 img,
-.camiseta3 img,
-.camiseta4 img,
-.camiseta5 img{
-    height: 160px;
-    border: 2px solid black;
-    border-radius: 20px;
-}
-
-/* PANTALONES */
-.pantalon1,
-.pantalon2,
-.pantalon3,
-.pantalon4,
-.pantalon5 {
-    box-shadow: 10px 15px 8px;
-    padding-top: 30px;
     box-sizing: border-box;
-    background-color: rgba(26, 24, 24, 0.644);
-    width: 15vw;
-    height: 44vh;
-    border: 2px solid rgb(6, 170, 199);
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    row-gap: 30px;
 }
 
-.pantalon1-info,
-.pantalon2-info,
-.pantalon3-info,
-.pantalon4-info,
-.pantalon5-info {
-    height: 140px;
-    padding: 20px;
-    box-sizing: border-box;
-    border-radius: 10px;
-    color: whitesmoke;
-    margin-bottom: 80px;
-    width: 90%;
-    display: grid;
-    grid-template-areas: 
-    "Titulo Titulo"
-    "Precio Carrito"
-    ;
-    gap: 20px;
-    background-color: rgba(163, 163, 163, 0.13);
-    border: 1px solid rgb(6, 170, 199);
-}
-
-.pantalon1-info h1,
-.pantalon2-info h1,
-.pantalon3-info h1,
-.pantalon4-info h1,
-.pantalon5-info  h1{
-    font-size: 0.7vw;
-    font-family: "Lato", sans-serif;
-    
-}
-
-.pantalon1-info p,
-.pantalon2-info p,
-.pantalon3-info p,
-.pantalon4-info p,
-.pantalon5-info  p{
-    font-size: 0.7vw;
-    font-family: "Lato", sans-serif;
-    
-}
-
-.pantalon1 img,
-.pantalon2 img,
-.pantalon3 img,
-.pantalon4 img,
-.pantalon5 img{
-    height: 160px;
-    border: 2px solid black;
-    border-radius: 20px;
-}
-
-.button-agregar-carrito {
-    width: 6vw;
-    height: 3vw;
-    background-color: #2525258c; 
-    border: 2px solid #000; 
-    text-decoration: none;
-    padding: 10px 20px;
-    margin-left: 30px;
-    cursor: pointer;
-    border-radius: 15px;
-    position: relative;
-    overflow: hidden;
-}
-
-
-@keyframes button-move {
-    0% {
-        background-color: #2525258c;
-        margin-top: 0px;
-        border-left-color: rgba(6, 170, 199, 0.178);
-    }
-
-    20% {
-        border-left-color: rgba(6, 170, 199, 0.781);
-    }
-
-    50% {
-        margin-top: 10px;
-        border-top-color: rgb(6, 170, 199);
-    }
-
-    70% {
-        border-right-color: rgba(6, 170, 199, 0.781);
-    }
-
-    100% {
-        border-bottom-color: rgba(6, 170, 199, 0.575);
-    }
-}
-
-.button-agregar-carrito:hover {
-    animation: button-move 2s linear 0s normal forwards running;
-    background-color: #000;
-}
-
-.button-agregar-carrito a{
-    color: rgb(6, 170, 199);
+.cantidad-container input{
+    background-color: red;
+    width: 2vw;
+    padding: 5px;
 }

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marry Shop</title>
+    <link rel="stylesheet" href="/CSS/carrito.css">
+</head>
+<body>
+    <header>
+        <div class="contenedor-titulo">
+            <h1 class="titulo">MaryShop</h1>
+        </div>
+        <nav>
+            <button class="todos-productos">
+                <a href="/HTML/index.html" style="text-decoration: none; color: whitesmoke;">
+                    <h2>Todos Los Productos</h2>
+                </a>
+            </button>
+            <button class="abrigos">
+                <a href="/HTML/abrigos.html" style="text-decoration: none;  color: whitesmoke;">
+                    <h2>Abrigos</h2>
+                </a>
+            </button>
+            <button class="camisetas">
+                <a href="/HTML/camisetas.html" style="text-decoration: none;  color: whitesmoke;">
+                    <h2>Camisetas</h2>
+                </a>
+            </button>
+            <button class="pantalones">
+                <a href="/HTML/pantalones.html" style="text-decoration: none;  color: whitesmoke;">
+                    <h2>Pantalones</h2>
+                </a>
+            </button>
+        </nav>
+        <button class="contenedor-carrito">
+            <a href="/HTML/carrito.html" style="text-decoration: none;  color: whitesmoke;">
+                <h1>Carrito</h1>
+            </a>
+        </button>
+        <div class="copyright">
+            <h3 style="color: whitesmoke;"> © 2023 Camper</h3>
+        </div>
+    </header>
+
+    <main>
+        <section id="todos-productos">
+            <div class="titulo-contenedor">
+                <h1 style="color: whitesmoke; font-size: 160%; font-family: 'Lato', sans-serif;">Carrito De Compras</h1>
+            </div>
+            <section id="productos">
+                <div class="producto-container">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_930447-MCO71410142210_092023-F.webp" alt="">
+                    <div class="info-container">
+                        <h1>Nombre</h1>
+                        <p>Chaqueta Impermeable En Gabán Para Dama Blanco</p>
+                    </div>
+                    <div class="cantidad-container">
+                        <label for="cantidad">Cantidad</label>
+                        <input type="number" value="2" >
+                    </div>
+                    <div class="precio-info">
+                        <h1>Precio</h1>
+                        <p>$93.900</p>
+                    </div>
+                    <div class="subtotal-info">
+                        <h1>Sub Total</h1>
+                        <p>$187.800</p>
+                    </div>
+                    <button class="boton-eliminar">
+                        <a href="#">
+                            <img src="/bote-de-basura.png" alt="">
+                        </a>
+                    </button>
+                </div>
+                <!--Segundo Producto-->
+                <div class="producto-container">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_731406-MCO42646277112_072020-F.webp" width="250px" alt="">
+                    <div class="info-container">
+                        <h1>Nombre</h1>
+                        <p>Pantalon En Dril Licrado Para Hombre.</p>
+                    </div>
+                    <div class="cantidad-container">
+                        <label for="cantidad">Cantidad</label>
+                        <input type="number" value="2" >
+                    </div>
+                    <div class="precio-info">
+                        <h1>Precio</h1>
+                        <p>$58.900</p>
+                    </div>
+                    <div class="subtotal-info">
+                        <h1>Sub Total</h1>
+                        <p>$187.800</p>
+                    </div>
+                    <button class="boton-eliminar">
+                        <a href="#">
+                            <img src="/bote-de-basura.png" alt="">
+                        </a>
+                    </button>
+                </div>
+                <div class="producto-container">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_776916-MCO72088562654_102023-F.webp" width="250px" alt="">
+                    <div class="info-container">
+                        <h1>Nombre</h1>
+                        <p>Camisetas Bandas De Rock Metal Heavy Riffs..</p>
+                    </div>
+                    <div class="cantidad-container">
+                        <label for="cantidad">Cantidad</label>
+                        <input type="number" value="1" >
+                    </div>
+                    <div class="precio-info">
+                        <h1>Precio</h1>
+                        <p>$32.800</p>
+                    </div>
+                    <div class="subtotal-info">
+                        <h1>Sub Total</h1>
+                        <p>$187.800</p>
+                    </div>
+                    <button class="boton-eliminar">
+                        <a href="#">
+                            <img src="/bote-de-basura.png" alt="">
+                        </a>
+                    </button>
+                </div>
+            </section>
+            <section class="borrar-total-comprar">
+                <button class="boton-borrar-carrito">
+                    <a href="#">
+                        <img src="/bote-de-basura.png" alt="">
+                            Vaciar Carrito
+                    </a>
+                </button>
+                <div class="total">
+                    <p>Total</p>
+                    <p>$</p>
+                    <button class="boton-comprar">
+                        Comprar
+                    </button>
+                </div>
+            </section>
+        </section>
+    </main>
+</body>
+</html>
